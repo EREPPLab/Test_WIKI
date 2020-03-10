@@ -24,7 +24,7 @@ Hardware tutorial page
      - Add plot for csv -> Best Fitness, Generation sum Fitness
      - Make tutorial for csv example
      
-     Make Database tutorial
+   Make Database tutorial
      - Export Database scheme
      - Add File to github
      - Make the tutorial
