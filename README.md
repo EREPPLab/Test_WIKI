@@ -15,8 +15,8 @@ GA Robot - Working Version 1 Realse Requirements
  
  <b>3D Printing Page</b>
   - Amazon Affilite Link
-  - Finish based on jetbot example X
-  - 3D printing Service X
+  - Finish based on jetbot example <b>X</b>
+  - 3D printing Service <b>X</b>
   
   <b>Software Page</b> 
   - Simulation for first test of software 
