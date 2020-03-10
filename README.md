@@ -34,5 +34,13 @@ GA Robot - Working Version 1 Realse Requirements
   - Software is the main goal here.
   - The robot is an example of how to apply it in a real life application
   
+  <b>Bill of Materials Page</b>
+  - Afforable Hardware section table
+  - Quality Hardware section table
+  - Brief description explaining what each section is and what the total cost is.
+ 
+ <b> Jet bot example to follow</b>
+  - https://github.com/NVIDIA-AI-IOT/jetbot/wiki
+  
   
   
