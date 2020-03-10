@@ -19,10 +19,10 @@ GA Robot - Working Version 1 Realse Requirements
   - 3D printing Service X
   
   <b>Software Page</b> 
-    -Simulation for first test of software 
-     - Add write to csv back
-     - Add plot for csv -> Best Fitness, Generation sum Fitness
-     - Make tutorial for csv example
+  - Simulation for first test of software 
+      - Add write to csv back
+      - Add plot for csv -> Best Fitness, Generation sum Fitness
+      - Make tutorial for csv example
      
    <b>Make Database tutorial</b>
      - Export Database scheme
