@@ -25,9 +25,9 @@ GA Robot - Working Version 1 Realse Requirements
       - Make tutorial for csv example
      
    <b>Make Database tutorial</b>
-     - Export Database scheme
-     - Add File to github
-     - Make the tutorial
+   - Export Database scheme
+   - Add File to github
+   - Make the tutorial
  
  <b>File system oriantation</b>
   - Make two folders - Python, Ardunio code.
