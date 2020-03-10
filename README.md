@@ -5,7 +5,7 @@ GA Robot - Working Version 1 Realse Requirements
 1 - X Finished but needs review
 2 - XX Finished and reviewed
 
-Hardware tutorial page
+<b>Hardware tutorial page</b>
  - Add Images
  - Optimize Images
  - Get images folder out of repository
@@ -13,23 +13,23 @@ Hardware tutorial page
  - Quality Hardware Page
  
  
- 3D Printing Page
+ <b>3D Printing Page</b>
   - Amazon Affilite Link
   - Finish based on jetbot example X
   - 3D printing Service X
   
-  Software Page 
+  <b>Software Page</b> 
     Simulation for first test of software 
      - Add write to csv back
      - Add plot for csv -> Best Fitness, Generation sum Fitness
      - Make tutorial for csv example
      
-   Make Database tutorial
+   <b>Make Database tutorial</b>
      - Export Database scheme
      - Add File to github
      - Make the tutorial
  
- File system oriantation
+ <b>File system oriantation</b>
   - Make two folders - Python, Ardunio code.
   - Software is the main goal here.
   - The robot is an example of how to apply it in a real life application
