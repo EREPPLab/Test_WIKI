@@ -2,7 +2,7 @@
 
 GA Robot - Working Version 1 Realse Requirements
 
-1 - X Finished but needs review
+1 - X Finished but needs review <br>
 2 - XX Finished and reviewed
 
 <b>Hardware tutorial page</b>
