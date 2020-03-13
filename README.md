@@ -20,8 +20,9 @@ GA Robot - Working Version 1 Realse Requirements
   
   <b>Software Page</b> - Dan, Muhammed
   - Simulation for first test of software 
-      - Add write to csv back
-      - Add plot for csv -> Best Fitness, Generation sum Fitness
+      - Add write to csv back X
+      - Add plot for csv -> Generation sum Fitness X
+      - Add plot for csv -> Best Fitness
       - Make tutorial for csv example
      
    <b>Make Database tutorial</b> - Dan
