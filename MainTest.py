@@ -67,25 +67,7 @@ while Current_trial < Number_of_trials:
     ga.evaluation_impl = TestEvaluation()
     ga.initialize()
 
-    database_csv = ["Index, Selection, Crossover, Mutation, Evaluation,"
-                    " Termination, Elitism, Generation, Fitness, Chromosome"]
-    database_index = 0
-
-    # Config UID is check in the database and added if necessary
-    #if Current_trial == 0:
-        # Config_UID = Database.Get_Config_UID(type(ga.selection_impl).__name__,
-                                             # type(ga.crossover_impl).__name__,
-                                             # type(ga.mutation_impl).__name__,
-                                             # type(ga.evaluation_impl).__name__,
-                                             # type(ga.termination_impl).__name__,
-                                             # True,
-                                             # Population_size,
-                                             # Chromosome_length,
-                                             # Mutation_rate)
-
-    # Temporary variable to store each generation to add to Database
-    # Generation = []
-    # Run the GA
+    
     while not ga.is_over():
         ga.evolve()
         best = ga.get_best()
@@ -100,57 +82,14 @@ while Current_trial < Number_of_trials:
             fitness = ga.get_fitness(chromosome)
             # Add to Database list
             chromosome_string = ' '.join(map(str, chromosome))
-
-            #chromosome_string = '[' + ','.join(map(str, chromosome)) + ']'
-
-            entry = "{0}, {1}, {2}, {3}, {4}, {5}, {6}, {7}, {8}, \"{9}\"".format(
-                database_index,
-                type(ga.selection_impl).__name__,
-                type(ga.crossover_impl).__name__,
-                type(ga.mutation_impl).__name__,
-                type(ga.evaluation_impl).__name__,
-                type(ga.termination_impl).__name__,
-                str(ga.elitism),
-                ga.generation,
-                fitness,
-                str(chromosome_string))
-
-            database_csv.append(entry)
-            database_index += 1
-
-            # Database.Add_run(Config_UID, ga.generation, fitness, Current_trial, str(chromosome_string), Robot_UID)
-            # Generation.append([ga.generation, fitness, Current_trial, str(chromosome_string), Robot_UID])
             # Print Chromosome - Fitness
             print("\t" + str(ga.population[i]) + " - " + str(ga.get_fitness(ga.population[i])))
             print("\t Chromosome #" + str(i) + " - " + str(ga.get_fitness(ga.population[i])))
         # ---------- Each Generation ---------- #
         # Print the Cache and how many elements
         print("\tCache has " + str(len(ga.fitness_cache.keys())) + " elements.")
-        # Add each generation to the database
-        # Database.Add_generation(Generation, Config_UID)
-        # Empty the generation so we don't add it on the next
-        #Generation = []
     # ---------- Each Trial ---------- #
     Current_trial += 1
 
 end = time.time()
 print("Simulation took " + str(end - start) + " seconds.")
-
-# End connection
-# Database.End_connection()
-
-with open("Database.csv", "w") as write_file:
-    for line in database_csv:
-        write_file.write(line)
-        write_file.write("\n")
-
-data1 = csvFunctions.Graph_data('Database.csv')
-
-fig, ax = plt.subplots()
-ax.set_title("Genetic Algorithm Simulation")
-ax.set_xlabel("Generation")
-ax.set_ylabel("Sum of Generation Fitness")
-ax.plot(data1[0], data1[1], label="Run")
-ax.legend()
-
-plt.show()
